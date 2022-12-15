@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>lab5</title>
+    <link rel="stylesheet" href="lab5.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header class="row">
+        <div class="logo">
+            <p id="dmhome" onclick="window.location.reload()">DMHOME</p>
+        </div>
+        <div class="header">
+            <div id="categories" onclick="change(this)" onmouseover="big(this)" onmouseout="normal(this)">Categories</div>
+            <div id="brands" onclick="change(this)" onmouseover="big(this)" onmouseout="normal(this)">Brands</div>
+            <div id="catalogue" onclick="change(this)" onmouseover="big(this)" onmouseout="normal(this)">Catalogue</div>
+            <div id="about" onclick="change(this)" onmouseover="big(this)" onmouseout="normal(this)">About</div>
+            <div id="news & events" onclick="change(this)" onmouseover="big(this)" onmouseout="normal(this)">Library</div>
+        </div>
+        <div class="logo">
+            <p id="login" onclick="popup()">Log In</p>
+        </div>
+    </header>
+
+
+    <div class="pic">
+        <div class="user_profile">
+            <img id="avatar" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png" alt="">
+            <p id="user_name">John</p>
+        </div>
+    </div>
+
+        <div class="popup">
+            <div class="popup-content">
+                <form class="login">
+                    <img onclick="closep()" src="close.jpg" alt="" width="7%" class="closed" />
+                    <img src="logo.png" alt="" width="15%" id="logo" />
+                    <input type="text" id="usname" name="name" placeholder="Username" required />
+                    <input type="password" id="logpass" name="password" placeholder="Password" />
+                    <button type="submit" id="logbtn" onclick="" class="btn">Log In</button>
+                </form>
+                <p>Don't have an account? <span onclick="signup()">Sign Up</span></p>
+            </div>
+        </div>
+
+        <div class="signup">
+            <div class="signup-content">
+                <img onclick="closep()" src="close.jpg" alt="" width="7%" class="closed" />
+                <h1>Sign Up</h1>
+                <p>It's free and only takes a minute'</p>
+                <form class="sign_up">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="nname" value="" required />
+                    <label for="password">Password</label>
+                    <input type="password" value="" id="pass" minlength="8" name="password" pattern=".{8,}" required />
+                    <label for="confirm_password">Confirm password</label>
+                    <input type="password" name="confirm_password" id="cpass" value="" required />
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="eml" value="" required />
+                    <label for="age">Age</label>
+                    <input type="number" name="age" value="" maxlength="2" required />
+                    <div class="genderr">
+                        <label for="gender">Gender</label>
+                        <input type="radio" name="gender" value="male" />Male
+                        <input type="radio" name="gender" value="female" />Female
+                    </div>
+                    <button type="submit" onclick="verify()" class="btn">Sign Up</button>
+                </form>
+                <p>Already have an account? <span onclick="popup()">Log In</span></p>
+            </div>
+        </div>
+        </div>
+    <script src="lab5.js"></script>
+</body>
+</html>

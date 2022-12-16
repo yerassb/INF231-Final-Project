@@ -1,0 +1,54 @@
+<html>
+<head>
+    <link rel="stylesheet" href="final.css" />
+    <title>Registration Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body{
+            background-color:#efc8c8;
+        }
+    </style>
+</head>
+<body>
+<div class="popup">
+    <div class="popup-content">
+        <form class="login">
+            <a href="final.html"><img src="img/close.jpg" alt="" width="7%" class="closed" /></a>
+            <img src="img/logo.png" alt="" width="15%" id="logo" />
+            <input type="text" id="usname" name="name" placeholder="Username" required />
+            <input type="password" id="logpass" name="password" placeholder="Password" />
+            <button type="submit" id="logbtn" onclick="" class="btn">Log In</button>
+        </form>
+        <p>Don't have an account? <span onclick="signup()">Sign Up</span></p>
+    </div>
+</div>
+
+<div class="signup">
+    <div class="signup-content">
+        <a href="final.html"><img src="img/close.jpg" alt="" width="7%" class="closed" /></a>
+        <h1>Sign Up</h1>
+        <p>It's free and only takes a minute'</p>
+        <form class="sign_up">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="nname" value="" required />
+            <label for="password">Password</label>
+            <input type="password" value="" id="pass" minlength="8" name="password" pattern=".{8,}" required />
+            <label for="confirm_password">Confirm password</label>
+            <input type="password" name="confirm_password" id="cpass" value="" required />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="eml" value="" required />
+            <label for="age">Age</label>
+            <input type="number" name="age" value="" maxlength="2" required />
+            <div class="genderr">
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" value="male" />Male
+                <input type="radio" name="gender" value="female" />Female
+            </div>
+            <button type="submit" onclick="verify()" class="btn">Sign Up</button>
+        </form>
+        <p>Already have an account? <span onclick="popup()">Log In</span></p>
+    </div>
+</div>
+  <script src="final.js"></script>
+</body>
+</html>

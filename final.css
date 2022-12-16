@@ -48,7 +48,7 @@ h1{
  .popup{
      position:absolute;
      top:0;
-     display:none;
+     display:flex;
      justify-content:center;
      align-items:center;
      width:100%;
@@ -141,24 +141,6 @@ label{
  #login:hover{
      color:darkorange;
  }
-.user_profile {
-    position: absolute;
-    margin: 0;
-    top: 40px;
-    right: 20px;
-    z-index: 1;
-    display: none;
-}
- #avatar{
-     display:inline;
-     margin:0;
-     padding:10px 0 0 0;
-     width:40px;
-     height:40px;
-     border-radius:50%;
- }
- #user_name{
-     display:inline;
-     margin:0;
-     font-size:25px;
+ #login{
+     text-decoration:none;
  }

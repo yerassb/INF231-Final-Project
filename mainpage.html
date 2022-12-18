@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>lab5</title>
+    <link rel="stylesheet" href="mainpage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <section class="firstpage">
+        <div class="container first">
+            <div class="row">
+                <div class="logo">
+                    <p id="dmhome" onclick="window.location.reload()">DMHOME</p>
+                </div>
+                <div class="header">
+                    <div id="categories" onclick="change(this)" onmouseover="big(this)" onmouseout="normal(this)">Categories</div>
+                    <div id="brands" onclick="change(this)" onmouseover="big(this)" onmouseout="normal(this)">Brands</div>
+                    <div id="catalogue" onclick="change(this)" onmouseover="big(this)" onmouseout="normal(this)">Catalogue</div>
+                    <div id="about" onclick="change(this)" onmouseover="big(this)" onmouseout="normal(this)">About</div>
+                    <div id="news & events" onclick="change(this)" onmouseover="big(this)" onmouseout="normal(this)">Library</div>
+                </div>
+                <div class="logo">
+                    <a href="register.html" id="login">Log In</a>
+                </div>
+            </div>
+            <h3 class="main_header"> The finest in every sense</h3>
+        </div>
+    </section>
+
+    <section class="person_content">
+        <div class="container">
+            <div class="person_content-main">
+                <div class="all1">
+                    <div class="person_content-header">
+                        <div class="hd">
+                            <h1 class="person_content_hd">Our expertise is to cater every bit of fulfillment and to create sumptuous delights to your luxury home living.</h1>
+                        </div>
+                    </div>
+                    <div class="pcol1">
+                        <img src="img/man.jpg" />
+                    </div>
+                </div>
+
+                <div class="pcol2">
+                    <div class="pcol1">
+                        <img src="img/two.jpg" />
+                    </div>
+                    <h4 class="purified">Purified</h4>
+                    <p>Hundreds of choices filtered down for the best of the best. For the purest of dream and function - and for an intensity of comfort and beauty.</p>
+                    <br />
+                    <a href="register.html"><h4 class="start">Get started!</h4></a>
+                </div>
+            </div>
+            <div class="person_content-info">
+                <div class="icon1">
+                    <img src="img/one.png" />
+                    <br />
+                    <h5>LUXE</h5>
+                    <p>Luxury living starts here. Wondroud collections of spectacular hand-made and one-off products acquired from the world's best designer brand.'</p>
+                </div>
+                <div class="icon2">
+                    <img src="img/two.png" />
+                    <br />
+                    <h5>advice&selection</h5>
+                    <p>From a client’s need as our priority comes bespoke selections of furnishing pieces. Expect only the top-of-the-range specifications, from interior design to full turn-key services.</p>
+                </div>
+                <div class="icon3">
+                    <img src="img/three.png" />
+                    <br />
+                    <h5>Inventory</h5>
+                    <p>A true treasure trove of eclectic and unique design goods. A trip worthy of a visit, for those in search for best finds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="marketing">
+        <div class="container">
+            <div class="mark">
+                <p class="lineUp">About DMHOME</p>
+            </div>
+            <div class="video">
+                <video width="700" height="500" controls autoplay>
+                    <source src="video/marketing.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    <script src="mainpage.js"></script>
+</body>
+</html>

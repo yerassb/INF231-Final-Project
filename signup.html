@@ -1,27 +1,32 @@
+<?php
+    session_start();
+    echo $_SESSION["error_message"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="mainfont.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/mainfont.css">
     <title>Sign Up</title>
 </head>
 <body>
     <div class="wrapper">
-        <form id="signupform" action="registration.php" method = "post">
+        <form id="signupform" action="php/signup.php" method = "post">
             <div class="text">
                 <h1>Sign Up</h1>
                 <p>it's free and only takes a minute</p>
             </div>
             <div>
                 <span class="desc">Email</span>
-                <input class="fields" type="text" name="email" id="email">
+                <input class="fields" type="email" name="email" id="email">
             </div>
             <div>
                 <span class="desc">Username</span>
-                <input class="fields" type="text" name="firstname" id="firstname">
+                <input class="fields" type="text" name="username" id="username">
             </div>
             <div>
                 <span class="desc">Password</span>
@@ -29,7 +34,7 @@
             </div>
             <div>
                 <span class="desc">Confirm Password</span>
-                <input class="fields" type="password" name="confirm_password" id="password">
+                <input class="fields" type="password" name="confirm_password" id="confirm_password">
             </div>
             <div class = "gender">
                 <span class="desc">Gender: </span>
@@ -48,5 +53,6 @@
             </div>
         </form>
     </div>
+    <script src="js/registervalidation.js"></script>
 </body>
 </html>

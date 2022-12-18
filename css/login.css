@@ -1,0 +1,47 @@
+body{
+    background-color:#efc8c8;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loginform {
+    width: 40%;
+    height: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#loginform div{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#loginform .fields{
+    height: 80%;
+    width: 60%;
+}
+#loginform .submission{
+    height: 30%;
+}
+#loginform .submission div{
+    padding: 2%;
+}
+#loginform #login{
+    width: 50%;
+    height: 30%;
+}

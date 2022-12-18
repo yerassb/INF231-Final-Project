@@ -371,3 +371,41 @@ a .start{
     border-radius:5px;
     border:2px solid black;
 }
+
+.hhhd h3 {
+    font-family: 'Times New Roman', Arial, Helvetica, sans-serif, serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: #808080;
+    font-size: 60px;
+    border-bottom:1px solid white;
+}
+
+
+/*end-section*/
+.end {
+    color: white;
+    background-color: black;
+    padding: 20px 150px 100px 150px;
+}
+
+.privacy {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    display: inline-flex;
+}
+
+.navigations {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-right: 300px;
+    line-height: 2em;
+}
+
+.nnav {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    line-height: 2em;
+}

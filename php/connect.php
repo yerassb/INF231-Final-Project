@@ -5,5 +5,5 @@
     if(!$connect){
         die("Connection failed");
     }
-    echo "Connected~\n";
+    // echo "Connected~\n";
 ?>

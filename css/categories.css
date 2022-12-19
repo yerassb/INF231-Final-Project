@@ -33,6 +33,7 @@ body{
 }
 .main{
     height: 100vh;
+    padding-bottom: 10%;
     
 }
 .main a{

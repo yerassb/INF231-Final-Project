@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 18px;
+    /* background-color: red; */
 }
 
 .header{
@@ -32,25 +33,47 @@ body{
 }
 .main{
     padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main .content{
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 10px;
+    width: 100%;
+    /* padding: 10px; */
+    /* column-gap: 5%; */
+    row-gap: 5%;
 }
 
 .item_img{
     
     width: 100%;
     height: 50%;
-    object-fit: cover;
+    object-fit: contain;
+
 }
 
 .card{
     width: 20vw;
-    height: 40vh;
+    height: 50vh;
     border: 1px solid #995959;
     border-radius: 10px;
-    background-color: #ffe8e1;
+    background-color: #ffe5df;
+    display: flex;
+    flex-direction: column;
+}
+.card p{
+    padding: 2%;
+}
+.card .info{
+    /* height: 5%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card button{
+    /* height: 20%; */
 }

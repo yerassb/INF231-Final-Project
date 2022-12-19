@@ -9,10 +9,10 @@ body {
 .firstpage{
     background-image:url("img/back.jpg");
 }
-.row{
+/* .row{
     display:flex;
-}
-.header{
+} */
+/* .header{
     display:flex;
     justify-content:space-around;
     padding:40px 160px 40px 280px;
@@ -20,7 +20,7 @@ body {
 }
 .header div{
     padding-right:50px;
-}
+} */
 
 #dmhome {
     font-size: 30px;

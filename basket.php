@@ -13,27 +13,7 @@
     <title>Basket</title>
 </head>
 <body>
-    <div class = "header">
-        <a href="mainpage.html" style="font-size: 1.4em">DM Home</a>
-        <div class="menu">
-            <a href="categories.php">Categories</a>
-            <a href="brands.html">Brands</a>
-            <a href="catalogue.html">Catalogue</a>
-            <a href="about.html">About</a>
-            <a href="library.html">Library</a>
-        </div>
-        <div class="headerbtns">
-            <?php 
-                if(array_key_exists('user', $_SESSION)){
-                    echo "<a href=\"Basket.php\">Basket</a>";
-                    echo "<a href=\"logout.php\">Log Out</a>";
-                } 
-                else{
-                    echo "<a href=\"signup.html\">Log In</a>";
-                }
-            ?>
-        </div>
-    </div>
+    <?php include ('header.php'); ?>
     <div class="main">
         <div class="text"><h2>Your Basket</h2></div>
         <div class="content">
@@ -66,6 +46,7 @@
                     }
                     
                 }
+                
                 else{
                     echo "Your basket is empty";
                 }

@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 18px;
-
+    /* background-color: red; */
 }
 
 .header{
@@ -52,26 +52,42 @@ body{
 
 .main .bedroom{
     /* background-color: rgba(120, 120, 120, 0.5); */
-    background-image: linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url('../img/categories_imgs/bedroom.jpg');
-    object-fit: cover;
+    background: linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url('../img/categories_imgs/bedroom.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    object-fit: scale-down;
+    object-position: 50% 50%;
     
 }
 .main .kitchen{
     /* background-color: rgba(120, 120, 120, 0.5); */
-    background-image: linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url('../img/categories_imgs/kitchen.jpg');
-    object-fit: cover;
+    background: linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url('../img/categories_imgs/kitchen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    object-fit: scale-down;
+    object-position: 50% 50%;
     
 }
 .main .kids-room{
     /* background-color: rgba(120, 120, 120, 0.5); */
-    background-image: linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url('../img/categories_imgs/kids-room.jpg');
-    object-fit: cover;
+    background: linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url('../img/categories_imgs/kids-room.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    object-fit: scale-down;
+    object-position: 50% 50%;
     
 }
 .main .dining-room{
     /* background-color: rgba(120, 120, 120, 0.5); */
     
     background: linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url('../img/categories_imgs/dining-room.jpg');
-    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    object-fit: scale-down;
+    object-position: 50% 50%;
     
 }

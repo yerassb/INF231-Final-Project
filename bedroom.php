@@ -39,7 +39,7 @@
     <div class = "header">
         <a href="mainpage.html" style="font-size: 1.4em">DM Home</a>
         <div class="menu">
-            <a href="categories.html">Categories</a>
+            <a href="categories.php">Categories</a>
             <a href="brands.html">Brands</a>
             <a href="catalogue.html">Catalogue</a>
             <a href="about.html">About</a>

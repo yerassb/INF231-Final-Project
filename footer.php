@@ -21,22 +21,19 @@
             <div class="nnav">
                 <div class="nnav1">
                     <h5>Navigations</h5>
-                    <a href="index.php">Main Page</a>
-                    <a href="about.php">About us</a>
+                    <p><a href="index.php">Main Page</a></p>
+                    <p><a href="about.php">About us</a></p>
                     <!-- <p>Portfolio</p>
                     <p>Services</p>
                     <p>About Me</p>
                     <p>Reviews</p> -->
                     <!-- <p >Contacts</p> -->
-                    <p>Privacy</p>
+                    <!-- <p>Privacy</p> -->
                 </div>
                 <div class="contacts">
                     <h5>Contacts</h5>
-                    <p>Tilda experts</p>
-                    <p>Telegram</p>
-                    <p>Whatsapp</p>
-                    <p style="padding-bottom:8em;">Mail</p>
-                    <p>Cookies</p>
+                    <p><a href="https://t.me/symbat_mekembayeva">Telegram</a></p>
+                    <p style="padding-bottom:8em;"><a href="mailto: 210103098@stu.sdu.edu.kz">Mail</a></p>
 
                 </div>
             </div>

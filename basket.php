@@ -72,6 +72,7 @@
                     echo "<form action=\"basket.php?action=removeall\" method=\"post\">
                             <input type=\"submit\" value=\"Remove All Items\">
                         </form>";
+                        
                 }
                 
                 else{
@@ -80,5 +81,6 @@
             ?>
         </div>
     </div>
+    <?php include('footer.php');?>
 </body>
 </html>

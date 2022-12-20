@@ -19,7 +19,7 @@
         switch($_GET["action"]){
             case "add":
                 if(array_key_exists('user', $_SESSION)){
-                    mysqli_query($connect, "INSERT INTO BASKET VALUES ('" . $_SESSION['user'] .  "', " . $_GET['code'] + 1 . ")");       
+                    mysqli_query($connect, "INSERT INTO BASKET VALUES ('" . $_SESSION['user'] .  "', " . $_GET['code'] . ")");       
                 }
                 else{
                     header("Location: login.html");
@@ -51,7 +51,7 @@
             <?php 
                 for ($x = 0; $x < sizeof($items); $x++) {
                 echo "
-                    <form action=\"bedroom.php?action=add&code=" . $items[$x]['Item_ID'] . "\ method=\"post\">
+                    <form action=\"bedroom.php?action=add&code=" . $items[$x]['Item_ID'] . "\" method=\"post\">
                     <div class=\"card\" id = \"" . $x . "\">
                         <img class=\"item_img\" src=\"" . $items[$x]['Item_Image'] . "\" alt=\"item_img\">
                         <p class=\"item_name\">" . $items[$x]['Item_Name'] . "</p>
@@ -67,5 +67,6 @@
             ?>
         </div>
     </div>
+    <?php include('footer.php'); ?>
 </body>
 </html>

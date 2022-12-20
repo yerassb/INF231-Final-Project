@@ -11,10 +11,10 @@
         <a href="index.php" style="font-size: 1.4em">DM Home</a>
         <div class="menu">
             <a href="categories.php">Categories</a>
-            <a href="brands.html">Brands</a>
+            <a href="kitchen.php">Kitchen</a>
+            <a href="bedroom.php">Bedrooom</a>
             <a href="catalogue.php">Catalogue</a>
             <a href="about.php">About</a>
-            <a href="library.html">Library</a>
         </div>
         <div class="headerbtns">
             <?php 

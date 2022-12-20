@@ -19,7 +19,7 @@
         switch($_GET["action"]){
             case "add":
                 if(array_key_exists('user', $_SESSION)){
-                    mysqli_query($connect, "INSERT INTO BASKET VALUES ('" . $_SESSION['user'] .  "', " . $_GET['code'] + 1 . ")");       
+                    mysqli_query($connect, "INSERT INTO BASKET VALUES ('" . $_SESSION['user'] .  "', " . $_GET['code'] . ")");       
                 }
                 else{
                     header("Location: login.html");
@@ -67,5 +67,6 @@
             ?>
         </div>
     </div>
+    <?php include('footer.php'); ?>
 </body>
 </html>

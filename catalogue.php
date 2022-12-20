@@ -246,7 +246,7 @@
 
     <!--the end section-->
 
-    <section class="end">
+    <!-- <section class="end">
         <div class="hhhd">
             <h3>subscribe to get <br /> our latest updates</h3>
         </div>
@@ -278,7 +278,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <?php include('footer.php');?>
     <script src="mainpage.js"></script>
 </body>
 </html>

@@ -9,9 +9,14 @@ body {
 .firstpage{
     background-image:url("img/back.jpg");
 }
-/* .row{
-    display:flex;
-} */
+.row{
+    display: flex;
+}
+.row div{
+    /* display:flex; */
+    width: 100vw;
+}
+
 /* .header{
     display:flex;
     justify-content:space-around;

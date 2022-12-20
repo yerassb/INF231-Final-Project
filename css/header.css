@@ -20,6 +20,10 @@ body{
     color: black;
     font-weight: 500;
 }
+.header a:hover{
+    color: darkorange;
+    transition: 0.2s;
+}
 .header .menu{
     width: 50%;
     display: flex;

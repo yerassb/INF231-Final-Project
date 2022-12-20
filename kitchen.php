@@ -3,9 +3,9 @@
 
     session_start();
 
-    $_SESSION['prevpage'] = 'bedroom.php';
+    $_SESSION['prevpage'] = 'kitchen.php';
 
-    $q = mysqli_query($connect, "SELECT * FROM ITEMS WHERE Item_Category = 'bedroom';");
+    $q = mysqli_query($connect, "SELECT * FROM ITEMS WHERE Item_Category = 'kitchen';");
 
     // echo mysqli_num_rows($q) . "\r\n";
 
@@ -39,19 +39,19 @@
     <link rel="stylesheet" href="css/mainfont.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/forbasket.js"></script>
-    <title>For bedroom</title>
+    <title>For kitchen</title>
 </head>
 <body>
     <?php include('header.php'); ?>
     <div class="main">
         <div class="intro">
-            <h2>Our best furniture for your bedroom: </h2>
+            <h2>Our best furniture for your kitchen: </h2>
         </div>
         <div class="content">
             <?php 
                 for ($x = 0; $x < sizeof($items); $x++) {
                 echo "
-                    <form action=\"bedroom.php?action=add&code=" . $items[$x]['Item_ID'] . "\ method=\"post\">
+                    <form action=\"kitchen.php?action=add&code=" . $items[$x]['Item_ID'] . "\" method=\"post\">
                     <div class=\"card\" id = \"" . $x . "\">
                         <img class=\"item_img\" src=\"" . $items[$x]['Item_Image'] . "\" alt=\"item_img\">
                         <p class=\"item_name\">" . $items[$x]['Item_Name'] . "</p>

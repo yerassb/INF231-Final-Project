@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class = "header">
-        <a href="mainpage.php" style="font-size: 1.4em">DM Home</a>
+        <a href="index.php" style="font-size: 1.4em">DM Home</a>
         <div class="menu">
             <a href="categories.php">Categories</a>
             <a href="brands.html">Brands</a>

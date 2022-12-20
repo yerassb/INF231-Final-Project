@@ -5,6 +5,6 @@
 
     unset($_SESSION['user']);
 
-    header('Location: mainpage.php');
+    header('Location: index.php');
 
 ?>

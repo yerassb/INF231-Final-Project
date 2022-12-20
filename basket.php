@@ -1,6 +1,28 @@
 <?php
     session_start();
     require_once 'php/connect.php';
+
+    if(!empty($_GET["action"])){
+        switch($_GET["action"]){
+            case "removeall":
+                if(array_key_exists('user', $_SESSION)){
+                    mysqli_query($connect, "DELETE FROM BASKET WHERE USERNAME = '" . $_SESSION['user'] . "';");       
+                }
+                else{
+                    header("Location: login.html");
+                }
+            break;
+            case "remove":
+                if(array_key_exists('user', $_SESSION)){
+                    mysqli_query($connect, "DELETE FROM BASKET WHERE username = '" . $_SESSION['user'] .  "' AND item_ID = " . $_GET['code'] . ";");       
+                }
+                else{
+                    header("Location: login.html");
+                }
+            break;
+        }
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,10 +63,15 @@
                             <img class=\"item-img\" src=\"" . $item["Item_Image"] . "\" alt=\"\">
                             <div class=\"name\">" . $item["Item_Name"] . "</div>
                             <div class=\"price\">" . $item["Item_Price"] . "</div>
+                            <form action=\"basket.php?action=remove&code=" . $ids[$x]['item_ID'] . "\" method=\"post\">
+                                <input type=\"submit\" value=\"Remove Item\">
+                            </form>
                         </div>    
                         ";
                     }
-                    
+                    echo "<form action=\"basket.php?action=removeall\" method=\"post\">
+                            <input type=\"submit\" value=\"Remove All Items\">
+                        </form>";
                 }
                 
                 else{

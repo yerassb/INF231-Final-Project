@@ -45,9 +45,12 @@ body{
     border: 1px solid black;    
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-around;
     margin-bottom: 1%;
     
+}
+.cart-item form{
+    right: 0;
 }
 .cart-item .item-img{
     width: 10%;

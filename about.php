@@ -97,39 +97,7 @@
 
     <!--the end section-->
 
-    <section class="end">
-        <div class="hhhd">
-            <h3>subscribe to get <br /> our latest updates</h3>
-        </div>
-        <div class="privacy">
-            <div class="navigations">
-                <h5>DMHOME</h5>
-                <p style="padding-bottom:9em;">Join us for better experience and start making your home with DMHOME</p>
-                <br />
-                <p>© 2022 DMHOME - All rights Reserved</p>
-            </div>
-            <div class="nnav">
-                <div class="nnav1">
-                    <h5>Navigations</h5>
-                    <p>Portfolio</p>
-                    <p>Services</p>
-                    <p>About Me</p>
-                    <p>Reviews</p>
-                    <p style="padding-bottom:6em;">Contacts</p>
-                    <p>Privacy</p>
-                </div>
-                <div class="contacts">
-                    <h5>Contacts</h5>
-                    <p>Tilda experts</p>
-                    <p>Telegram</p>
-                    <p>Whatsapp</p>
-                    <p style="padding-bottom:8em;">Mail</p>
-                    <p>Cookies</p>
-
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include('footer.php'); ?>
 
 
     <script src="mainpage.js"></script>

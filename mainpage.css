@@ -230,6 +230,7 @@ label{
 .all1 {
     flex-grow: 1;
     flex-basis: 0;
+    
 }
 
 .pcol1 {
@@ -412,4 +413,21 @@ a .start{
 a{
     text-decoration:none;
     color:black;
+}
+
+@media screen and (max-width:900px){
+    .container{
+        width: 100%;
+    }
+    .video{
+        width:400px;
+        height:200px;
+    }
+    .person_content-info{
+        display:flex;
+        flex-direction: row;
+    }
+    .pcol2{
+        display:none;
+    }
 }
